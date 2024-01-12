@@ -3,6 +3,7 @@ public class Runner {
   //To Run and Test Your Changes, Open a Command Window and Make Sure Java is Installed
   //Issue Command: javac Runner.java (This Will Compile the Java To a Runnable File)
   //Issue Command: java -ea Runner (This Will Run the Runnable File with Assertions Enabled)
+  //Note: The static keyword is used to say that a method doesn't belong to a class instance.
 
   public static void main(String[] args) {
     // 1. Create two integer variables called num1 and num2 respectively. Initialize Their Values to 0.
@@ -19,7 +20,7 @@ public class Runner {
 
     // 4. Write a method below called isItEven() that takes one integer parameter called number.
     // In the method, return the boolean true if the number is even and false if the number is odd using conditional structures.
-    // Call the method within the System.out.println() and replace <method_call>.
+    // The method will be called within the assertion.
     assert isItEven(sum) == false : "Sum Should Not Be Even!";
 
     // 5. Initialize two double variables, one called tax and the other called price.
