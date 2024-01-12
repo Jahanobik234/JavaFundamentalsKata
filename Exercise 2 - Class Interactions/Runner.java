@@ -2,7 +2,7 @@ public class Runner {
 
   //To Run and Test Your Changes, Open a Command Window and Make Sure Java is Installed
   //Issue Command: javac Runner.java (This Will Compile the Java To a Runnable File)
-  //Issue Command: java Runner (This Will Run the Runnable File)
+  //Issue Command: java -ea Runner (This Will Run the Runnable File with Assertions Enabled)
 
   public static void main(String[] args) {
     Bike bicycle = new Bike();
@@ -20,12 +20,12 @@ public class Runner {
     System.out.println(motorcycle.toString());
 
     // Verification Code - Do Not Modify
-    assert bicycle.getNumberOfWheels() == 2;
-    assert bicycle.getColor() == "Blue";
-    assert bicycle.getHasMotor() == false;
+    assert bicycle.getNumberOfWheels() == 2 : "Bicycle has wrong number of wheels!";
+    assert bicycle.getColor() == "Blue" : "Bicycle doesn't have the right paint color!";
+    assert bicycle.getHasMotor() == false : "Bicycle incorrectly identified to have motor!";
     assert bicycle != motorcycle;
 
-    System.out.println("Success for Exercise 1!");
+    System.out.println("Exercise 2 Success - Congrats!");
   }
 
 }
